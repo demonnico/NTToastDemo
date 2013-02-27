@@ -121,14 +121,15 @@ static NTToastBarManager * _instance;
 
 +(NTToastBarManager*)shareInstance
 {
-    if(!_instance)
-    {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
         _instance = [[NTToastBarManager alloc] init];
+        
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(dismissEvent:)
                                                      name:NTTOAST_DISMISS_EVENT
                                                    object:nil];
-    }
+    });
     return _instance;
 }
 
