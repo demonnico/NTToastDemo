@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NTToastBar.h"
 @interface ViewController : UIViewController
 
+- (IBAction)makeToast:(id)sender;
 @end

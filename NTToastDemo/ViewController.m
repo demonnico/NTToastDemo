@@ -26,4 +26,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)makeToast:(id)sender
+{
+    NSString * words =@"hello,world你好世界";
+    
+    int repeatCount = arc4random()%3;
+    while (repeatCount>0)
+    {
+        words = [words stringByAppendingString:words];
+        repeatCount--;
+    }
+
+    [NTToastBarManager showToast:words
+                      inDuration:1.0];
+}
 @end
