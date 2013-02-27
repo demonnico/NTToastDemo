@@ -8,6 +8,12 @@
 
 #import "NTToastBar.h"
 
+@interface NTToastBar (Private)
+
+#define CRT_TOAST_TAG   10086
+#define NTTOAST_DISMISS_EVENT @"NTTOAST_DISMISS_EVENT"
+
+@end
 
 @implementation NTToastBar
 

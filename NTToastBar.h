@@ -11,8 +11,6 @@
 
 #define MAX_WIDTH 200
 #define DEFAULT_FONT [UIFont systemFontOfSize:11]
-#define CRT_TOAST_TAG   10086
-#define NTTOAST_DISMISS_EVENT @"NTTOAST_DISMISS_EVENT"
 
 @interface NTToastBar : UIView
 {
