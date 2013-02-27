@@ -18,6 +18,7 @@
 		6420C03716DDE65300BDCA6E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6420C03616DDE65300BDCA6E /* Default-568h@2x.png */; };
 		6420C03A16DDE65300BDCA6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6420C03916DDE65300BDCA6E /* ViewController.m */; };
 		6420C03D16DDE65300BDCA6E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6420C03B16DDE65300BDCA6E /* ViewController.xib */; };
+		6420C04616DDE67400BDCA6E /* NTToastBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6420C04516DDE67400BDCA6E /* NTToastBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		6420C03816DDE65300BDCA6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6420C03916DDE65300BDCA6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6420C03C16DDE65300BDCA6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6420C04416DDE67400BDCA6E /* NTToastBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTToastBar.h; sourceTree = "<group>"; };
+		6420C04516DDE67400BDCA6E /* NTToastBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTToastBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		6420C01116DDE65300BDCA6E = {
 			isa = PBXGroup;
 			children = (
+				6420C04316DDE65B00BDCA6E /* NTToastWidget */,
 				6420C02616DDE65300BDCA6E /* NTToastDemo */,
 				6420C01F16DDE65300BDCA6E /* Frameworks */,
 				6420C01D16DDE65300BDCA6E /* Products */,
@@ -105,6 +109,15 @@
 				6420C03616DDE65300BDCA6E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6420C04316DDE65B00BDCA6E /* NTToastWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6420C04416DDE67400BDCA6E /* NTToastBar.h */,
+				6420C04516DDE67400BDCA6E /* NTToastBar.m */,
+			);
+			name = NTToastWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +189,7 @@
 				6420C02D16DDE65300BDCA6E /* main.m in Sources */,
 				6420C03116DDE65300BDCA6E /* AppDelegate.m in Sources */,
 				6420C03A16DDE65300BDCA6E /* ViewController.m in Sources */,
+				6420C04616DDE67400BDCA6E /* NTToastBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
